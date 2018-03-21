@@ -7,6 +7,9 @@
   <version>2.0.0</version>
   <name>my-maven</name>
   <url>http://maven.apache.org</url>
+	<properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,23 +18,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
-  <build>
-	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-javadoc-plugin</artifactId>
-			<executions>
-				<execution>
-					<id>attach-javadocs</id>
-					<goals>
-						<goal>jar</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
-	</build>
+ 
   
 <distributionManagement>
     <repository>
